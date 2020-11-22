@@ -25,15 +25,15 @@
             <div class="content">
               <div class="inner">
                 <h1>V2C Development Team</h1>
-                <p>A team dedicated to building the V2C Voice-to-Command Platform. More information to come soon.</p>
+                <p>We're the team responsible for the original V2C implementation. Learn more below!</p>
               </div>
             </div>
             <nav>
               <ul>
-<!--
-                <li><a href="#intro">Intro</a></li>
-                <li><a href="#work">Work</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#work">Original Work</a></li>
+                <li><a href="#contribute">Contribute</a></li>
+<!--
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="#elements">Elements</a></li>
 -->
@@ -44,27 +44,72 @@
         <!-- Main -->
           <div id="main">
 
-            <!-- Intro -->
-              <article id="intro">
-                <h2 class="major">Intro</h2>
-                <span class="image main"><img src="images/pic01.jpg" alt="" /></span>
-                <p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. By the way, check out my <a href="#work">awesome work</a>.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
-              </article>
-
-            <!-- Work -->
-              <article id="work">
-                <h2 class="major">Work</h2>
-                <span class="image main"><img src="images/pic02.jpg" alt="" /></span>
-                <p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.</p>
-                <p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
-              </article>
-
             <!-- About -->
               <article id="about">
                 <h2 class="major">About</h2>
-                <span class="image main"><img src="images/pic03.jpg" alt="" /></span>
-                <p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
+                <span class="image main"><img src="images/team.png" alt="" /></span>
+                <p>
+                  In the fall semester of 2020, seven senior students at the University of Central Oklahoma gathered to create
+                  the original implementation of the protocol known now as V2C.
+                  <ul>
+                    <li>Caleb was the chief architect of the high-level architecture and API, served as the team lead, designed the
+                        deterministic finite-state automata standard used to manipulate various components, designed the dashboard
+                        backend, and built the proof-of-concept submission package for the capstone project.</li>
+                    <li>Nicholas served as the product owner for the project; he also conceptualized and became the chief engineer of
+                        the desktop controller.</li>
+                    <li>Cole served as our lead quality assurance analyst and also was the chief engineer for the gaming proof-of-concept,
+                        a critical component in our work to prove that nearly anything on a machine could be controled with your voice.</li>
+                    <li>Everistus was the lead dashboard UX/UI engineer and ensured that other graphical components could be snapped in
+                        to the proof-of-concept easily. He also ensured that messages were routed appropriately to the various gaming
+                        modules.</li>
+                    <li>Rashed was the principle engineer of the voice recognition module, which serves as the starting point of the
+                        entire workflow.</li>
+                    <li>Jon was instrumental as an engineer for both the desktop controller, especially with regard to implementing the
+                        deterministic finite state automata, and for the dispatcher, especially with regard to the pull-based API
+                        implementation.</li>
+                    <li>Glen designed and engineered one of the proofs-of-concept for the gaming component of the dashboard.</li>
+                  </ul>
+                  When the class ended, all of the original members went on to continue contributing at the
+                  <a href="https://acmcentral.org" target="_blank">Edmond ACM Chapter</a> because they felt that V2C had the potential
+                  to become an important protocol standard in the future.
+                </p>
+              </article>
+
+            <!-- Original Work -->
+              <article id="work">
+                <h2 class="major">Original Work</h2>
+                <p>
+                  V2C resulted from a combination of ideas proposed by Caleb, Everistus, and Nicholas. The ultimate idea was to
+                  create a new protocol that would allow individuals to use their voices to control their computers over various
+                  networks, no matter where they were physically located at any given point in time. The vision: imagine that you
+                  walk into a computer lab-- you expect that the computers you use already have standardized devices and functionalities.
+                  For example, you'd be very confused if your computer didn't have a mouse, or an internet connection. Imagine walking
+                  into a computer lab and having the ability to use your voice on any computer, using grammars that you've already
+                  customized in place-- even before you've ever physically used the computer in question. This goal reflects the vision
+                  of the V2C Development Team.
+                </p>
+                <span class="image main"><img src="images/xplatform_voice_hla.png" alt="" /></span>
+                <p>
+                  To achieve this widespread functionality, the platform was designed to be incredibly modular-- see the diagram above.
+                  Modularity, enforced with API-driven development, was also incredibly important to make it easier for other third-party
+                  developers to add their own modules to the project. While the protocol is being developed by the
+                  <a href="https://acmcentral.org" target="_blank">Edmond ACM Chapter</a> now, you can still view and fork the old code
+                  by visiting <a href="https://github.com/V2C-Development-Team" target="_blank">GitHub</a>.
+                </p>
+              </article>
+
+            <!-- Contribute -->
+              <article id="contribute">
+                <h2 class="major">Contribute</h2>
+                <span class="image main"><img src="images/acmcentral_banner.png" alt="" /></span>
+                <p>
+                  You can still contribute to the ongoing development of the protocol! The
+                  <a href="https://acmcentral.org" target="_blank">Edmond ACM Chapter</a> has taken up the development of the protocol and
+                  reference implementation-- you can fork that or contribute to it on
+                  <a href="https://bitbucket.org/acmcentral/workspace/repositories?search=v2c&sort=-updated_on" target="_blank">Bitbucket</a>.
+                  If you'd like to be more involved in designing the specification itself, we invite you to
+                  <a href="https://acmcentral.org/membership.php" taget="_blank">join the Edmond ACM Chapter</a> today!
+                </p>
               </article>
 
             <!-- Contact -->
@@ -345,7 +390,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
         <!-- Footer -->
           <footer id="footer">
             <p class="copyright">
-              &copy; 2020 V2C Development Team. Designed by <a href="https://html5up.net" target="_blank">HTML5 UP</a>.
+              &copy; 2020 Caleb L. Power, Everistus Akpabio, Rashed Alrashed, Nicholas Clemmons, Jonathan Craig, James Cole Riggall, and Glen Mathew.<br />Designed by <a href="https://html5up.net" target="_blank">HTML5 UP</a>.
             </p>
           </footer>
 
